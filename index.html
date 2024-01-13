@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+<script src="./js/main.js" defer></script>
 <title>Calculator</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
       placeholder="Enter first number"
       minlength="1"
       maxlength="10"
-      value="10"
+      value="20"
       required>
       <input 
       class="input-controle num2"
@@ -40,14 +41,13 @@
       <button id="button-multiply" type="button" class="button button-multiply">x</button>
       <button id="button-subtraction" type="button" class="button button-subtraction">/</button>
     </div>
-    <button class="button button-calculate">Calculate</button>
+    <button id="submit" type="button" class="button button-calculate">Calculate</button>
     <div class="result-container">
       <h4 class="result-title">Result:</h4>
       <p id="result" class="result">20</p>
     </div>
   </form>
   <div class="bg">
-
   </div>
 </body>
 </html>
