@@ -15,6 +15,14 @@
 <title>Calculator</title>
 </head>
 <body>
+  <!-- <svg class="icon icon-star" width="32" height="32">
+    <use xlink:href="images/symbol-defs.svg#icon-Star">
+    </use> -->
+    <!-- <svg class="icon icon-ellipse" width="32" height="32">
+      <use xlink:href="images/symbol-defs.svg#icon-Ellipse" >
+      </use>
+    </svg> -->
+  </svg>
   <h1 class="title">Calculator</h1>
   <form class="form">
       <input 
@@ -24,7 +32,7 @@
       placeholder="Enter first number"
       minlength="1"
       maxlength="10"
-      value="20"
+      value=""
       required>
       <input 
       class="input-controle num2"
@@ -33,13 +41,17 @@
       placeholder="Enter first number"
       minlength="1"
       maxlength="10"
-      value="10"
+      value=""
       required>
     <div class="buttons-container">
-      <button id="button-plus" type="button" class="button button-plus">+</button>
-      <button id="button-minus" type="button" class="button button-minus">-</button>
-      <button id="button-multiply" type="button" class="button button-multiply">x</button>
-      <button id="button-subtraction" type="button" class="button button-subtraction">/</button>
+      <div class="container">
+        <button id="button-plus" type="button" class="button button-plus">+</button>
+        <button id="button-minus" type="button" class="button button-minus">-</button>
+      </div>
+      <div class="container">
+        <button id="button-multiply" type="button" class="button button-multiply">x</button>
+        <button id="button-subtraction" type="button" class="button button-subtraction">/</button>
+      </div>
     </div>
     <button id="submit" type="button" class="button button-calculate">Calculate</button>
     <div class="result-container">
@@ -48,6 +60,7 @@
     </div>
   </form>
   <div class="bg">
+
   </div>
 </body>
 </html>

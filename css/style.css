@@ -36,7 +36,7 @@ input::-webkit-outer-spin-button {
 
 /* ------Title------*/
 .title {
-  margin-top: 83px;
+  margin-top: 66px;
   margin-bottom: 36px;
   text-align: center;
   font-family: 'Titan One', sans-serif;
@@ -131,10 +131,15 @@ input::-webkit-outer-spin-button {
 /* ------Buttons------ */
 .buttons-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
   max-width: 836px;
+}
+
+.container {
+display: flex;
+gap: 15px;
+flex-direction: column;
 }
 
 .button {
@@ -167,6 +172,10 @@ input::-webkit-outer-spin-button {
   }
 }
 
+.button:focus {
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-primary-light);
+}
 
 .button:hover {
   color: var(--color-primary-light);
@@ -266,3 +275,4 @@ input::-webkit-outer-spin-button {
   }
 }
 
+/* svg-images */

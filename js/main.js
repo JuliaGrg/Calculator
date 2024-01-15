@@ -7,10 +7,7 @@ const btnMultiply = document.getElementById('button-multiply');
 const btnSubtraction = document.getElementById('button-subtraction');
 const btnSubmit = document.getElementById('submit');
 let action = '+';
-// const sum = Number(num1.value) + Number(num2.value);
-// const min = Number(num1.value) - Number(num2.value);
-// const mul = Number(num1.value) * Number(num2.value);
-// const sub = Number(num1.value) / Number(num2.value);
+
 
 btnPlus.onclick = function() {
   action = '+';
@@ -29,24 +26,18 @@ btnSubtraction.onclick = function() {
 }
 
 btnSubmit.onclick = function () {
+  const sum = Number(num1.value) + Number(num2.value);
+  const min = Number(num1.value) - Number(num2.value);
+  const mul = Number(num1.value) * Number(num2.value);
+  const sub = Number(num1.value) / Number(num2.value);
+
   if (action === '+') {
-    const sum = Number(num1.value) + Number(num2.value);
     resultElement.textContent = sum;
-  } 
-
-  if (action === '-') {
-    const min = Number(num1.value) - Number(num2.value);
+  } else if (action === '-') {
     resultElement.textContent = min;
-  } 
-
-  if (action === '*') {
-    const mul = Number(num1.value) * Number(num2.value);
+  } else if (action === '*') {
     resultElement.textContent = mul;
-  } 
-
-  if (action === '/') {
-    const sub = Number(num1.value) / Number(num2.value);
-
+  } else if (action === '/') {
     resultElement.textContent = sub;
   } 
 }
