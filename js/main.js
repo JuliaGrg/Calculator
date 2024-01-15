@@ -39,5 +39,11 @@ btnSubmit.onclick = function () {
     resultElement.textContent = mul;
   } else if (action === '/') {
     resultElement.textContent = sub;
-  } 
+  }
+
+  if (resultElement.textContent <= 0) {
+    resultElement.style.color = 'DeepPink';
+  } else {
+    resultElement.style.color = 'YellowGreen';
+  }
 }
